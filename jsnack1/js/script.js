@@ -18,6 +18,7 @@ const bikes = [
     { name: "Giant TCR Advanced SL", weight: 6.6 }
 ];
 
+// Creo una funzione con il callback function reduce che scorre nel mio array mantenendo il valore inferiore
 const minWeightValue = bikes.reduce((min, current) =>
     current.weight < min.weight ? current : min, bikes[0]);
 

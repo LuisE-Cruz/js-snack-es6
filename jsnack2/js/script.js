@@ -8,14 +8,14 @@ Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subit
 */
 
 const footballTeams = [
-  { name: "Juventus", fouls: null, points: null },
-  { name: "Milan", fouls: null, points: null },
-  { name: "Inter", fouls: null, points: null },
-  { name: "Roma", fouls: null, points: null },
-  { name: "Napoli", fouls: null, points: null },
-  { name: "Lazio", fouls: null, points: null },
-  { name: "Atalanta", fouls: null, points: null },
-  { name: "Fiorentina", fouls: null, points: null },
-  { name: "Torino", fouls: null, points: null },
-  { name: "Bologna", fouls: null, points: null }
+    { name: "Juventus", fouls: undefined, points: undefined },
+    { name: "Milan", fouls: undefined, points: undefined },
+    { name: "Inter", fouls: undefined, points: undefined },
+    { name: "Roma", fouls: undefined, points: undefined },
+    { name: "Napoli", fouls: undefined, points: undefined },
+    { name: "Lazio", fouls: undefined, points: undefined },
+    { name: "Atalanta", fouls: undefined, points: undefined },
+    { name: "Fiorentina", fouls: undefined, points: undefined },
+    { name: "Torino", fouls: undefined, points: undefined },
+    { name: "Bologna", fouls: undefined, points: undefined }
 ];
