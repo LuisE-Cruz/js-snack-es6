@@ -18,9 +18,40 @@ const bikes = [
     { name: "Giant TCR Advanced SL", weight: 6.6 }
 ];
 
-// Creo una funzione con il callback function reduce che scorre nel mio array mantenendo il valore inferiore
-const minWeightValue = bikes.reduce((min, current) =>
-    current.weight < min.weight ? current : min, bikes[0]);
-
 console.log(bikes);
-console.log(minWeightValue);
+
+// Creo una variabile di partenza
+let lightlessBike = bikes[0];
+
+// Ciclo for che scorre le bici e valuta il .peso se minore o meno e resituisce infine il valore alla nostra variabile di partenza
+for (let index = 0; index < bikes.length; index++) {
+
+    if (bikes[index].weight < lightlessBike.weight) {
+        lightlessBike = bikes[index]
+    }
+}
+
+// Stampo la variabile modificata
+console.log(lightlessBike);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Creo una funzione con il callback function reduce che scorre nel mio array mantenendo il valore inferiore
+// const minWeightValue = bikes.reduce((min, current) =>
+//     current.weight < min.weight ? current : min, bikes[0]);
+
+
+// console.log(minWeightValue);
