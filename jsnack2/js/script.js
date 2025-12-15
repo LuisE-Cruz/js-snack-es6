@@ -30,6 +30,8 @@ for (let index = 0; index < footballTeams.length; index++) {
     footballTeams[index].fouls = rng(30);
     namesAndFouls.push({nome:footballTeams[index].name, fouls:footballTeams[index].fouls});
 }
+
+//stampo entrambi gli array
 console.log(footballTeams);
 console.log(namesAndFouls);
 
