@@ -19,3 +19,23 @@ const footballTeams = [
     { name: "Torino", fouls: undefined, points: undefined },
     { name: "Bologna", fouls: undefined, points: undefined }
 ];
+
+let namesAndFouls = []
+
+
+// creato ciclo for che aggiunto random numbers agli object points e fouls pusho il tutto in NamesAndFouls
+
+for (let index = 0; index < footballTeams.length; index++) {
+    footballTeams[index].points = rng(100);
+    footballTeams[index].fouls = rng(30);
+    namesAndFouls.push({nome:footballTeams[index].name, fouls:footballTeams[index].fouls});
+}
+console.log(footballTeams);
+console.log(namesAndFouls);
+
+
+
+// Funzioni
+function rng(max){
+    return Math.floor(Math.random() * max);
+}
